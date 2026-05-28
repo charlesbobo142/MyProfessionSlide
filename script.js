@@ -9,11 +9,11 @@
  
  //set interVal for iterating an Array and return a value 
  setInterval(() => {
-     let lang = val.next().value;
-     if (lang !== undefined) {
+     let{value:lang, done} = val.next();
+     if (done) {
          //insert the line in the html element
-         paragraph.innerHTML = (`I'M  ${lang} DEVELOPER`);
-     } else {
          val = languages.values();
+         lang = val.next().value;
      }
+     paragraph.innerHTML = (`I'M  ${lang} DEVELOPER`);
  }, 6000);
