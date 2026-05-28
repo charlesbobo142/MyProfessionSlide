@@ -27,11 +27,11 @@ fieldset {
 
 @keyframes p {
     from {
-        transform: translateX(200%);
+        transform: translateX(100%);
     }
     
     to {
-        transform: translateX(-130%);
+        transform: translateX(-90%);
     }
 }
 
@@ -40,4 +40,8 @@ p {
     flex-shrink: 0;
     transform: rotateX(50deg);
     animation: 6s p infinite linear;
+    transition: opacity 0.4s ease;
+}
+p.fade-out {
+  opacity: 0;
 }
