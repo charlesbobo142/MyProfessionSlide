@@ -36,6 +36,8 @@ fieldset {
 }
 
 p {
+    width: 100%;
+    flex-shrink: 0;
     transform: rotateX(50deg);
     animation: 6s p infinite linear;
 }
