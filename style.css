@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    background-color: teal;
+    position: relative;
+    font-family: "Times New Roman", Sans-Serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainScreen {
+    background-color: white;
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+    color: black;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+fieldset {
+    width: 90%;
+    color: blue;
+    margin-right: 30px;
+}
+
+@keyframes p {
+    from {
+        transform: translateX(200%);
+    }
+    
+    to {
+        transform: translateX(-130%);
+    }
+}
+
+p {
+    transform: rotateX(50deg);
+    animation: 6s p infinite linear;
+}
