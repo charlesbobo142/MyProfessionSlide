@@ -15,5 +15,5 @@
          val = languages.values();
          lang = val.next().value;
      }
-     paragraph.innerHTML = (`I'M  ${lang} DEVELOPER`);
+     paragraph.innerHTML = (`I'M  ${lang.toUpperCase()} DEVELOPER`);
  }, 6000);
